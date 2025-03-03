@@ -121,6 +121,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function blankOutCarDetails() {
+
+        document.querySelector('#target-aastamaks span').textContent = 
+            "Laeb...";
+        document.querySelector('#target-registreerimistasu span').textContent = 
+            "Laeb...";
+
         carElements.forEach(car => {
             car.querySelector('.car-title').textContent = 'Laeb...';
             car.querySelector('.car-year').textContent = '';

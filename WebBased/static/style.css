@@ -457,3 +457,53 @@ footer {
     color: #4CAF50;
 }
 
+/* Add these styles to your existing CSS file */
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg, #4CAF50, #FFC107, #F44336);
+    border-radius: 10px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.progress-fill {
+    display: none; /* Hide the fill completely */
+}
+
+.progress-line {
+    position: absolute;
+    height: 30px;
+    width: 4px;
+    background-color: #000;
+    top: -5px;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 2px;
+}
+
+.percentile-text {
+    position: absolute;
+    transform: translateX(-50%);
+    top: -30px;
+    font-weight: bold;
+    background: #333;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.header-container h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automaksu Mäng</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🎮Automaksu Mäng🎮</h1>
+            <p>Vali, millisel autol on näidatud aastamaks ja registreerimistasu!</p>
+            <a href="{{ url_for('index') }}" class="back-link">Tagasi avalehele 🏠🏃</a>
+        </header>
+
+        <div class="game-board">
+            <div class="target-fees">
+                <div id="target-info">
+                    <div class="target-label">Otsi autot järgmiste maksudega:</div>
+                    <div id="target-aastamaks">Aastamaks: <span></span>€</div>
+                    <div id="target-registreerimistasu">Registreerimistasu: <span></span>€</div>
+                </div>
+            </div>
+
+            <div class="cars-container">
+                <div class="car-option" id="car-0">
+                    <h3 class="car-title">Laeb...</h3>
+                    <div class="car-details">
+                        <p>Aasta: <span class="car-year"></span></p>
+                        <p>Värv: <span class="car-color"></span></p>
+                        <p>Mootori maht: <span class="car-engine-size"></span></p>
+                        <p>Võimsus: <span class="car-power"></span> kW</p>
+                        <p>Kütuse tüüp: <span class="car-fuel"></span></p>
+                    </div>
+                    <button class="select-button" data-index="0">Vali see auto</button>
+                </div>
+
+                <div class="car-option" id="car-1">
+                    <h3 class="car-title">Laeb...</h3>
+                    <div class="car-details">
+                        <p>Aasta: <span class="car-year"></span></p>
+                        <p>Värv: <span class="car-color"></span></p>
+                        <p>Mootori maht: <span class="car-engine-size"></span></p>
+                        <p>Võimsus: <span class="car-power"></span> kW</p>
+                        <p>Kütuse tüüp: <span class="car-fuel"></span></p>
+                    </div>
+                    <button class="select-button" data-index="1">Vali see auto</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-status">
+            <div id="score">Skoor: <span>0</span></div>
+            <div id="message"></div>
+            <button id="next-round" style="display: none;">Järgmine voor</button>
+            <button id="restart" style="display: none;">Alusta uuesti</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>

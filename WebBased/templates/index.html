@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Maksude Portaal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Auto Maksude Portaal</h1>
+            <p>Uurige ja avastage</p>
+        </header>
+
+        <div class="games-container">
+            <div class="game-card">
+                <h2>🎮Automaksu Mäng🎮</h2>
+                <p>Vali, millisel autol on näidatud aastamaks ja registreerimistasu.</p>
+                <a href="/game" class="game-button">Mängi</a>
+            </div>
+            <div class="game-card">
+                <h2>🔎Auto otsija aastamaksu või registreerimistasu järgi🔎</h2>
+                <p>Sisestage aastamaksu summa ja saage sobivad autod.</p>
+                <a href="/calculator" class="game-button">Kasuta</a>
+            </div>
+        </div>
+        <div class="games-container">
+            <div class="game-card">
+                <h2>🚗Automudelite maksude ülevaade🚗</h2>
+                <p>Valige auto mark, ja saate aastamaksu ja registreerimistasu.</p>
+                <a href="/taxes" class="game-button">Kasuta</a>
+            </div>
+            <div class="game-card">
+                <h2>📊Auto maksude analüüs📊</h2>
+                <p>Sisestage automaks ja saate analüüsida</p>
+                <br><br><br>
+                <a href="/analysis" class="game-button">Kasuta</a>
+            </div>
+        </div>
+    </div>
+    </div> 
+</body>
+</html>
